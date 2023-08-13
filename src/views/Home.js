@@ -1,16 +1,13 @@
 import React from 'react';
+import Counter from "../containers/CounterContainer";
 
-function Home({
-  onIncrement,
-  counter,
-}) {
+function Home({counterValue}) {
   return (
     <div>
-      <button>
-        Vous avez cliqué {counter} fois
-      </button>
+      <p>Counter Value : {counterValue}</p>
+      <Counter />
     </div>
   );
-};
+}
 
 export default Home;
