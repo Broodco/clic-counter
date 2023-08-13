@@ -8,11 +8,11 @@ function Counter({
   return (
     <main>
       <div>
-        <button onClick={ onDecrement }>
+        <button className="decrementButton" onClick={ onDecrement }>
           -1
         </button>
         <span>{ counterValue }</span>
-        <button onClick={ onIncrement }>
+        <button className="incrementButton" onClick={ onIncrement }>
           +1
         </button>
 
