@@ -1,4 +1,5 @@
 import React from 'react';
+import './Counter.css';
 
 function Counter({
   counterValue,
@@ -7,12 +8,12 @@ function Counter({
 }) {
   return (
     <main>
-      <div>
-        <button className="decrementButton" onClick={ onDecrement }>
+      <div className="counter">
+        <button className="button decrementButton" onClick={ onDecrement }>
           -1
         </button>
-        <span>{ counterValue }</span>
-        <button className="incrementButton" onClick={ onIncrement }>
+        <span className="counterValue">{ counterValue }</span>
+        <button className="button incrementButton" onClick={ onIncrement }>
           +1
         </button>
 
