@@ -17,6 +17,7 @@ class App extends Component {
           <h1>Clic Counter </h1>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/clic-counter" component={Home} />
             <Route component={() => (<h2>Page introuvable</h2>)} />
           </Switch>
         </Router>
